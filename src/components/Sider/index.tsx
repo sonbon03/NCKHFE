@@ -6,7 +6,7 @@ import Status from "./components/Status";
 
 const SiderView: React.FC = () => {
   return (
-    <div className="d-flex d-md-block">
+    <div className="d-flex d-md-block flex-wrap">
       <SearchInfor />
       <SelectTime />
       <Status />

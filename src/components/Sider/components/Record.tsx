@@ -36,7 +36,7 @@ const Record = () => {
     <div className="p-3 record">
       <div className="menu-items">Lựa chọn số bản ghi</div>
       <hr className="border-bottom border-secondary mx-2" />
-      <div className="d-flex gap-3 px-3">
+      <div className="d-flex gap-3 px-3 select-record">
         <span className="number-record">Số bản ghi:</span>
         <Dropdown.Button
           icon={<DownOutlined />}

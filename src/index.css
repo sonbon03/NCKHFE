@@ -1,34 +1,45 @@
 /* ================= CSS Default ================= */
-/* @font-face {
-  font-family: "FontDemo_A";
-  src: url('../fonts/FontDemo.ttf') format('truetype');
+@font-face {
+  font-family: "Popins-Regular";
+  src: url('../src/assets/font/poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "FontDemo_B";
-  src: url('../fonts/FontDemo.ttf') format('truetype');
+  font-family: "Popins-Medium";
+  src: url('../src/assets/font/poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: "FontDemo_C";
-  src: url('../fonts/FontDemo.ttf') format('truetype');
-} */
+  font-family: "Popins-Semibold";
+  src: url('../src/assets/font/poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Popins-Bold";
+  src: url('../src/assets/font/poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
 
 :root {
   --light: #f7f8fa;
   --text: #747579;
   --title: #3f434c;
   --border: #c8c9cb;
-
+  --sider: #f3f3f3;
   --green: #58b958;
   --white: #ffffff;
   --font-nomal: 400;
   --font-medium: 500;
   --font-semiboid: 600;
   --font-boid: 700;
-  /* --font: "FontDemo_A", Roboto, Arial, sans-serif;
-  --font_b: "FontDemo_B", Roboto, Arial, sans-serif;
-  --font_spec: "FontDemo_C", Roboto, Arial, sans-serif; */
+  --popins_regular: "Popins-Regular", Roboto, Arial, sans-serif;
+  --popins_medium: "Popins-Medium", Roboto, Arial, sans-serif;
+  --popins_semibold: "Popins-Semibold", Roboto, Arial, sans-serif;
+  --popins_bold: "Popins-Bold", Roboto, Arial, sans-serif;
+
 }
 
 html {
@@ -160,6 +171,16 @@ p {
 /* ================= CSS FULL (content you write code here) ================= */
 .App {
   font-size: 16px;
+  font-family: var(--font-medium);
+}
+
+.ant-layout-sider {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248/var(--tw-bg-opacity));
+}
+
+.layout {
+  min-height: 100vh;
 }
 
 /* ================= HEADER ================= */
@@ -172,6 +193,18 @@ p {
 :where(.css-dev-only-do-not-override-i46qwz).ant-table-wrapper .ant-table-pagination.ant-pagination {
   justify-content: center;
 }
+
+.group-btn button {
+  color: white;
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 204 153/var(--tw-bg-opacity));
+  font-size: 16px;
+}
+
+/* .group-btn button:hover {
+  background-color: #52d2aa !important;
+  color: white;
+} */
 
 
 /* ================= FOOTER ================= */
@@ -188,9 +221,6 @@ p {
 }
 
 /* Search */
-.ant-layout-sider-children {
-  background-color: aqua;
-}
 
 .search img {
   top: 4px;
@@ -234,4 +264,9 @@ p {
 
 .group-status span {
   height: 30px;
+}
+
+/* List data table */
+.ant-table-cell span {
+  color: #888F97;
 }

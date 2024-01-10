@@ -19,12 +19,12 @@ const PostManagement = () => {
   };
   return (
     <div className="">
-      <div className="d-flex justify-content-between px-3 space_sider">
+      <div className="d-flex justify-content-between px-3 space_sider flex-wrap gap-2">
         <div className="fs-3">Quản lý bài đăng</div>
-        <div className="d-flex gap-2">
+        <div className="d-flex gap-3 group-btn">
           <button
             onClick={showModal}
-            className="border py-2 px-3 rounded-3 border border-success-subtle bg-info-subtle text-emphasis-info fs-7"
+            className="border py-1 px-5 rounded-4 border border-success-subtle"
           >
             Tạo mới
           </button>
@@ -39,7 +39,7 @@ const PostManagement = () => {
           >
             <ModalPost />
           </Modal>
-          <button className="border py-2 px-3 rounded-3 border border-success-subtle bg-info-subtle text-emphasis-info fs-7">
+          <button className="border py-1 px-5 rounded-4 border border-success-subtle">
             Xuất file
           </button>
         </div>

@@ -3,6 +3,8 @@ import { Table, Tag } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import iconTrash from "../../../assets/images/icon-trash.svg";
 import iconShow from "../../../assets/images/icon-show.svg";
+import useResponsive from "../../../hooks/useReponsive";
+
 interface DataType {
   key: string;
   title: string;
@@ -45,17 +47,20 @@ const columns: ColumnsType<DataType> = [
     title: "Ngày đăng bài",
     dataIndex: "datePost",
     key: "datePost",
+    responsive: ["lg"],
     render: (datePost) => <span>{datePost}</span>,
   },
   {
     title: "Người đăng",
     dataIndex: "poster",
     key: "poster",
+    responsive: ["sm"],
     render: (poster) => <span>{poster}</span>,
   },
   {
     title: "Người đánh giá",
     dataIndex: "assessor",
+    responsive: ["sm"],
     key: "assessor",
     render: (assessor) => <span>{assessor}</span>,
   },
@@ -76,12 +81,14 @@ const columns: ColumnsType<DataType> = [
     title: "Đơn vị tiêu thụ",
     dataIndex: "buyer",
     key: "buyer",
+    responsive: ["sm"],
     render: (buyer) => <span>{buyer}</span>,
   },
   {
     title: "Ngày xuất xưởng",
     dataIndex: "packDate",
     key: "packDate",
+    responsive: ["lg"],
     render: (packDate) => <span>{packDate}</span>,
   },
 ];

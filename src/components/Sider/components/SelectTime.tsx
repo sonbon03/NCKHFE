@@ -16,7 +16,7 @@ const SelectTime = () => {
     }
   };
   return (
-    <div className="p-3 space_sider border-bottom border-black ">
+    <div className="p-3 space_sider border-bottom border-black time">
       <div className="menu-items">Thời gian</div>
       <hr className="border-bottom border-secondary mx-2" />
       <div className="d-flex datetime gap-1 justify-content-center align-items-center flex-wrap">

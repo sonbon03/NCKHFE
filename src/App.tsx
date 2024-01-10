@@ -5,26 +5,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import { BrowserRouter } from "react-router-dom";
 import SiderView from "./components/Sider";
-import { Layout } from "antd";
 import { Content } from "antd/es/layout/layout";
 import PostManagement from "./pages/PostManagement";
 import Header from "./layout/Header";
-
-const { Sider } = Layout;
+import Sider from "antd/es/layout/Sider";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
-        <Layout className=" flex-column flex-md-row">
+        <div className="d-flex flex-column flex-md-row layout">
           <Sider className="sider">
             <SiderView />
           </Sider>
           <Content>
             <PostManagement />
           </Content>
-        </Layout>
+        </div>
       </BrowserRouter>
     </div>
   );

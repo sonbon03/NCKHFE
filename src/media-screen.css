@@ -9,6 +9,7 @@
 		max-width: 350px !important;
 		width: 350px !important;
 		flex: 0 0 auto !important;
+		height: 100vh;
 	}
 }
 
@@ -34,6 +35,18 @@
 	}
 
 
+
+	.menu-items {
+		font-size: 16px;
+	}
+
+	.search img {
+		right: 35px;
+	}
+
+
+
+
 }
 
 /* ================= Small Devices (Landscape Phones) ================= */
@@ -43,8 +56,6 @@
 	th {
 		padding: 10px;
 	}
-
-
 }
 
 /* ================= Medium Devices (Tablets) ================= */
@@ -85,9 +96,19 @@
 	:where(.css-dev-only-do-not-override-i46qwz).ant-table-wrapper .ant-table-thead>tr>th {
 		padding: 8px;
 	}
+
+
 }
 
 /* ================= Large Devices (Desktop) ================= */
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+	.search img {
+		top: 3px;
+		right: 35px;
+	}
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
 	.space_section {
 		padding: 40px 0;
@@ -178,5 +199,45 @@
 		width: 100% !important;
 		min-width: 100% !important;
 		flex: 0 0 auto;
+	}
+
+	.select-record {
+		flex-wrap: wrap;
+	}
+
+	.time,
+	.record,
+	.status,
+	.search {
+		width: 50%;
+	}
+
+	.search {
+		order: 1;
+	}
+
+	.status {
+		order: 2;
+	}
+
+	.time {
+		order: 3;
+	}
+
+	.record {
+		order: 4;
+	}
+
+	.record {
+		border-bottom: 1px solid;
+	}
+
+	.time div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.ant-table-cell {
+		text-align: center !important;
 	}
 }
