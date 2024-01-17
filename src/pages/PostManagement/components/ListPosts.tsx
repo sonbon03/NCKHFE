@@ -3,7 +3,6 @@ import { Table, Tag } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import iconTrash from "../../../assets/images/icon-trash.svg";
 import iconShow from "../../../assets/images/icon-show.svg";
-import useResponsive from "../../../hooks/useReponsive";
 
 interface DataType {
   key: string;
